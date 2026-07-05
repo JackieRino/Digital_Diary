@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Diary: Home</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://kit.fontawesome.com/bd68228cee.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <header id="homeHeader" class="allHeader">
+        
+    <h1 style="font-size: medium;">Digital Diary</h1>
+     <nav id="homeNav" class="allNav"> 
+            <ul>
+                <li><a href="/newEntry.html" style="background-color: black; color:white; padding: 5px; border-radius: 5px; ">New Entry</a></li>
+                <li><a href="/vault.html"> <i class="fa-regular fa-circle-user"></i></a></li>
+            </ul>
+
+         </nav>
+        
+    </header>
+    <div id="pageIntro">
+        <h2>Daily Reflections</h2>
+        <p>A sanctuary for your thoughts. Captured in the quiet moments between the noise of the world.</p>
+    </div>
+
+    <div id="cards">
+            <div class="card1" style=" grid-column: span 2; height: 20rem; background-color: rgb(241, 244, 244);">Card 1</div>
+            <div class="card2" style=" height: 20rem; background-color: rgb(181, 179, 179);">Card 2</div>
+            <div class="card3" style=" height: 15rem; background-color: rgb(171, 169, 169);">Card 3</div>
+            <div class="card4" style="grid-column: span 2;; height:15rem; background-color: rgb(247, 246, 246);">Card 4</div>
+            <!-- <div class="card5" style="width:5rem; height:5rem; background-color: palevioletred;">Card 5</div> -->
+    </div>
     
+    <footer id="footer" style="border:1px dotted grey;"> footer </footer>
+
 </body>
 </html>
