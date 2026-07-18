@@ -1,0 +1,110 @@
+
+
+body{
+background-color: rgba(200, 198, 197, 0.871);
+color:black;
+/* font-weight: bold; */
+}
+
+#entryHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    background-color: rgb(244, 240, 240);
+    padding:2px;
+    
+}
+
+/* .allHeader {
+ 
+    
+  padding: 2px; 
+ background-color: rgb(247, 244, 244)
+ ;
+
+} */
+
+h1{
+     display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* border:2px dotted black; */
+}
+
+#newEntryNav, #footerSection{
+    justify-content: flex-end;
+    align-items: end;
+    /* border: 2px double black; */
+    
+
+}
+
+#newEntryNav > ul, #footerSection > ul , #reflectionTitle > ul{
+    display: flex; 
+    justify-content: flex-start;
+    /* padding: 10px; */
+}
+
+#newEntryNav li, #footerSection li , #reflectionTitle li{
+
+    list-style-type: none;
+    margin-right: 10px;
+    /* font-weight: bold; */
+    
+}
+
+a:link{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color:chocolate;
+} 
+
+a:visited{
+    color:black;
+    text-decoration: underline;
+}
+
+
+/* the above css is similar to home page css. it needs to be consolidated. */
+
+#newEntryLink{
+
+    text-decoration: underline;
+     color:black;
+      padding: 5px; 
+     border-radius: 5px;
+     font-weight: bold;
+}
+
+textarea{
+    /* width:958px;
+    height:581px; */
+    justify-self: center;
+}
+
+#reflectionTitle{
+margin-left: 20px;
+margin-bottom:10px;
+/* border-left: 2px solid black; */
+padding:20px;
+
+
+}
+
+#reflectionTitle {
+    /* background-color: red; */
+    border-left: 3px solid black ;
+    margin-top: 5px;
+
+}
+
+.allButtons{
+    border-radius: 15px;
+    padding:5px;
+    
+    
+}
