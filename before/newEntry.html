@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel ="stylesheet" href="styles.css">
+    <link rel ="stylesheet" href="newEntry.css">
+    
+    <script src="https://kit.fontawesome.com/bd68228cee.js" crossorigin="anonymous"></script>
+    <title>New Entry</title>
+     
+</head>
+<body id="newEntryBody">
+    <header id="entryHeader" className="allHeader">
+       
+       <h1 style="font-size: medium;">Digital Diary</h1>
+     <nav id="newEntryNav"  className ="allNav"> 
+            <ul>
+
+               <li><a>Archive</a></li>
+                <li><a href="/newEntry.html"  id="newEntryLink">New Entry</a></li>
+                <li><a href="/vault.html"> <i class="fa-regular fa-circle-user"></i></a></li>
+            </ul>
+
+         </nav>
+        
+       
+    </header>
+
+
+<main>
+    <div id="reflectionTitle">
+        <h2 id="date"></h2>
+        <input type="text" 
+                id="entryTitle"
+                placeholder="Untitled Reflection">
+        
+        <ul>
+            <li><button> <i class="fa-solid fa-face-smile"></i> Thoughtful</button> </li>
+            <li><button><i class="fa-solid fa-plus"></i> Add Tag </button> </li>
+        </ul>
+
+    </div>
+    
+    <div id="textarea">
+        <textarea placeholder="Begin your reflection..." ></textarea>
+    </div>
+
+
+</main>
+
+
+    <div id="footerSection">
+        <ul>
+            <li><i class="fa-regular fa-image"></i> Insert Memory</li>
+            <li><button>Private</button></li>
+            <li><button>Discard</button></li>
+            <li><button>Save Entry</button></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
