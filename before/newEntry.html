@@ -29,23 +29,31 @@
 
 
 <main>
+    <form method="POST" action="?">
+        <!-- what would be the value of action here? should it be the server? is this where API Local Storage comes in? -->
+
     <div id="reflectionTitle">
         <h2 id="date"></h2>
         <input type="text" 
                 id="entryTitle"
-                placeholder="Untitled Reflection">
-        
+                placeholder="Untitled Reflection"
+                size="50">
+    
         <ul>
             <li><button> <i class="fa-solid fa-face-smile"></i> Thoughtful</button> </li>
             <li><button><i class="fa-solid fa-plus"></i> Add Tag </button> </li>
         </ul>
+</div>
 
-    </div>
+        <textarea id="textarea"
+         placeholder="Begin your reflection..." 
+         name="reflection Body"
+         cols="80"
+         rows="30"
+        ></textarea>
     
-    <div id="textarea">
-        <textarea placeholder="Begin your reflection..." ></textarea>
-    </div>
 
+</form>
 
 </main>
 
