@@ -42,10 +42,10 @@ profileLink.appendChild(profileIcon);
 
 
 const navItems = [
-     {name:"Home",      url: "home.html"},
-     {name:"New Entry", url:"newEntry.html"}, 
-     {name: "Vault",    url:"vault.html"},
-     {name:"Profile",   url:"profile.html"}];
+     {name:"Home",      url: "home.html",    icon:false},
+     {name:"New Entry", url:"newEntry.html", icon:false}, 
+     {name: "Vault",    url:"vault.html",    icon:false},
+     {name:"Profile",   url:"profile.html",  icon:true, iconName: "fa-regular fa-circle-user"}];
 // this can be declared globally so i can add things to it later
 
 
@@ -58,7 +58,16 @@ navItems.forEach (item=>{
     
     const link= document.createElement("a");
     link.setAttribute("href",item.url);
-    link.textContent= item.name;
+
+    if(item.icon){
+        const iconElement = document.createElement("i");
+        iconElement.className=item.iconName;
+
+        link.appendChild(iconElement);
+
+    }else {
+     link.textContent= item.name;
+    }
 
     const navLi= document.createElement("li");
     navLi.appendChild(link);
@@ -66,7 +75,13 @@ navItems.forEach (item=>{
     navUl.appendChild(navLi);
     
 });
-// 
+/* so this section creates the ul.
+then it loops through the above array, creating an anchor tag with 
+the corresponding href url and text content of each item.
+then it adds that anchor to an li. All of the li are then added 
+to the ul.
+then if there is an icon present, an icon element is created,
+and its classname created then appended into the a tag content.*/ 
 
 
 
