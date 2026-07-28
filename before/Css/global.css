@@ -1,0 +1,25 @@
+body{
+/* responsiveness code */
+font-family: cursive;
+border-radius: 40px;
+}
+
+
+#globalHeader{
+    border: 2px solid blue;
+
+}
+
+#pageIntro{
+
+ border: 2px solid red;
+}
+
+#cardsContainer{
+
+ border: 2px solid green;
+}
+
+.card{
+    border: 5px dotted purple;
+}
