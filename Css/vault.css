@@ -1,3 +1,7 @@
+body{
+    background-color: antiquewhite;
+}
+
 .cardEntry{
     overflow: hidden;
     display: -webkit-box;
@@ -12,12 +16,18 @@
 
 #cardsContainer{
 
-padding: 30px 20px 30px 20px;
+padding: 30px 10px 30px 20px;
+/* margin-top: 5pxpx; */
 
 }
 
 #pageIntro{
     border-radius: 10px;
-    background-color: rgb(195, 192, 192);
-    border:3px solid rgb(175, 175, 175);
+    background-color: rgb(245, 220, 220);
+    border:3px solid rgb(235, 213, 213);
+}
+
+.card{
+    background-color: rgb(243, 234, 234);
+    border-radius: 10px;
 }

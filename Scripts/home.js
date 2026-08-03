@@ -2,6 +2,7 @@
 and decide how they will be structured inside home
 same fro the other pages
 */
+ const navItems= navData;
 
 window.addEventListener("load",page);
 

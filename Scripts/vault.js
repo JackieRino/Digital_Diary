@@ -1,4 +1,10 @@
 
+const function addNavItems(navItems){
+    
+}
+
+
+
 window.addEventListener("load",page);
 
 function page(){
