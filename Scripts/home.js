@@ -4,11 +4,13 @@ same fro the other pages
 */
  const navItems= navData;
 
+ const headerPhrase = "Personal Chronicles";
+
 window.addEventListener("load",page);
 
 function page(){
 
-headerTemplate();
+headerTemplate(headerPhrase);
 
 // ########
 

@@ -1,15 +1,24 @@
 
-const function addNavItems(navItems){
-    
-}
+function add(navData){
 
+        navData.push({name:"Archive", url:"", icon:false},{name:"Settings", url:"", icon:true, iconName:"fa-solid fa-gear"});
+
+        return navData;
+
+        
+     }
+
+     
+const navItems = add(navData);
+
+const headerPhrase = "The Vault";
 
 
 window.addEventListener("load",page);
 
 function page(){
 
-headerTemplate();
+headerTemplate(headerPhrase);
 
 // ########
 

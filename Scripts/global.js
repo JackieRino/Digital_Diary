@@ -11,13 +11,13 @@
 const rootOne = document.getElementById("rootOne");
 
 
-function headerTemplate(){
+function headerTemplate(headerPhrase){
 
 const globalHeader = document.createElement("header");
 globalHeader.id="globalHeader";
 
 const h1 = document.createElement("h1");
-h1.textContent= "Personal Chronicles";
+h1.textContent= headerPhrase;
 h1.id= "pageHeading";
 
 globalHeader.id = "globalHeader";
