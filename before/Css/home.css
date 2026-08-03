@@ -1,0 +1,95 @@
+/* #rootOne{
+     /* background-image: url("/images/brown-fabric-texture.jpg");
+    background-size:cover;
+    color: #f7da8f9f;  */
+
+    /* background: radial-gradient(circle, rgb(71, 3, 3),rgb(3, 3, 71),rgb(1, 67, 1)); */
+
+
+
+#cardsContainer{
+    border: 5px dotted pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto auto;
+     gap:0.5rem;
+      width: 70%; 
+      margin-left: 3rem;
+
+}
+
+
+
+.card:first-child{
+    grid-column: span 2;
+    background-color: aqua;
+    
+}
+
+.card{
+    min-width: 0;
+    /* this prevents the long content from forcing the grid item wider */
+}
+
+.cardEntry{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    /* this gives ellipsis(...) */
+}
+
+.card:nth-child(2){
+    grid-column: span 1;
+    
+    background-color: blueviolet;
+}
+
+.card:nth-child(3){
+    grid-column: span 1 ;
+  
+}
+
+.card:nth-child(4){
+   grid-column: span 2;
+   background-color: brown;
+}
+
+#pageIntro > p{
+    font-size:large;
+    display:flex;
+    flex-wrap:wrap;
+    /* border: 2px solid black; */
+    width:35%;
+}
+
+#pageIntro {
+margin-left:3rem;
+/* justify-self: center; */
+margin-top: 1rem ;
+margin-bottom: 1rem;
+
+}
+
+#globalHeader{
+    padding:2px;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+
+#section{
+    border:2px dotted black;
+    display: flex;
+    justify-content: center;
+}
+
+#section li{
+    list-style: none;
+}
+
+/* .menuButton{
+    background-color: inherit;
+    font-weight: bold;
+} */

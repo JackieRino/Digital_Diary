@@ -2,8 +2,8 @@ body{
 background-color: rgba(200, 198, 197, 0.871);
 color:black;
 
-
 }
+
 #homeHeader{
     display: flex;
     flex-wrap: wrap;
@@ -110,25 +110,47 @@ margin-left:3rem;
 }
 
 .card1{
-     grid-column: span 2;
+    grid-column: span 2;
+    height: 20rem;
+     background-color: rgb(241, 244, 244);
      
 
 }
 
 .card2{
-    /* grid-row: span 3; */
+   height: 20rem; 
+   background-color: rgb(181, 179, 179);
 
 }
 
 .card3{
-    /* grid-column: span 4; */
+   height: 15rem;
+    background-color: rgb(171, 169, 169);
     
     
 }
+
+.card4{
+    grid-column: span 2;
+     height:15rem; 
+     background-color: rgb(247, 246, 246);
+}
+
+
+
 
 /* footer */
 #footer{
     display: flex;
     justify-content: center;
+    border:1px dotted grey;
     
+}
+
+#entryLink{
+
+    background-color: black;
+     color:white;
+      padding: 5px; 
+     border-radius: 5px;
 }

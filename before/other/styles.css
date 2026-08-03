@@ -1,0 +1,32 @@
+body{
+background-color: rgba(200, 198, 197, 0.871);
+color:black;
+}
+
+.allHeader {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  padding: 2px; 
+ background-color: rgb(188, 186, 186);
+
+}
+
+.allNav{
+ justify-content: flex-end;
+    align-items: end;
+
+}
+.allNav> ul{
+    display: flex; 
+    justify-content: end;
+    /* padding: 10px; */
+}
+
+.allNav > li{
+
+    list-style-type: none;
+    margin-right: 10px;
+    /* font-weight: bold; */
+    
+}

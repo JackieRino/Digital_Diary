@@ -1,7 +1,3 @@
-/*this is where you take the components from global
-and decide how they will be structured inside home
-same fro the other pages
-*/
 
 window.addEventListener("load",page);
 
@@ -29,4 +25,3 @@ footer();
 
 
 }
-

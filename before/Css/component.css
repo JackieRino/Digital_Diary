@@ -1,0 +1,45 @@
+/* Header Css */
+
+a:link{
+    color:rgb(225, 176, 97);
+    text-decoration: none;
+}
+
+a:hover, a:focus{
+    color:rgb(239, 176, 132);
+} 
+
+a:visited{
+    color:whitet;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+#globalHeader{
+    /* need css for header spacing */
+}
+
+#pageHeading{
+
+/* Css for the header- visual and positioning */
+
+}
+
+#globalNav{
+    /* css for the nav. css for the ul in the nav and for the li */
+}
+
+#globalNav li{
+
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#globalNav ul{
+ display:flex;
+ justify-content: flex-end;
+}

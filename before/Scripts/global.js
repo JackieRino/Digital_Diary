@@ -1,10 +1,9 @@
 // NAVIGATION
 const navItems = [
-     {name:"Home",      url: "home.html",    icon:false},
-     {name:"New Entry", url:"newEntry.html", icon:false}, 
-     {name: "Vault",    url:"vault.html",    icon:false},
-     {name:"Profile",   url:"profile.html",  icon:true, 
-        iconName: "fa-regular fa-circle-user"}];
+     {name:"Home",      url: "/Html/home.html",    icon:false },
+     {name:"New Entry", url:"/Html/newEntry.html", icon:false}, 
+     {name: "Vault",    url:"/Html/vault.html",    icon:false},
+     {name:"Profile",   url:"/Html/profile.html",  icon:true, iconName: "fa-regular fa-circle-user"}];
 // this can be declared globally so i can add things to it later
 
 // window.addEventListener("load",headerTemplate);
@@ -14,6 +13,15 @@ const rootOne = document.getElementById("rootOne");
 
 function headerTemplate(){
 
+const globalHeader = document.createElement("header");
+globalHeader.id="globalHeader";
+
+const h1 = document.createElement("h1");
+h1.textContent= "Personal Chronicles";
+h1.id= "pageHeading";
+
+globalHeader.id = "globalHeader";
+globalHeader.appendChild(h1);
 
 const navUl = document.createElement("ul");
 
@@ -43,16 +51,7 @@ const globalNav = document.createElement("nav");
 globalNav.id="globalNav";
     globalNav.appendChild(navUl);
 
-const globalHeader = document.createElement("header");
-globalHeader.id="globalHeader";
     globalHeader.appendChild(globalNav);
-    
-const h1 = document.createElement("h1");
-h1.textContent= "Personal Chronicles";
-h1.id= "pageHeading";
-
-globalHeader.id = "globalHeader";
-globalHeader.appendChild(h1);
 
 
 rootOne.appendChild(globalHeader);
@@ -112,20 +111,157 @@ to this function.
 
 // card is an object. cards is an array OF OBJECTS
 
+// function cardData(cards){
+// const cardsContainer= document.createElement("div");
+// cardsContainer.id="cardsContainer";
+
+// cards.forEach (card =>{
+
+//     const cardDiv= document.createElement("div");
+//     cardDiv.setAttribute("class", "card");
+
+//     const cardDate= document.createElement("p");
+//     cardDate.textContent= card.date;
+
+ 
+// cardDiv.appendChild(cardDate);
+
+//     const cardHeading= document.createElement("h2");
+//     cardHeading.textContent= card.heading;
+
+// cardDiv.appendChild(cardHeading);
+
+// const cardEntry= document.createElement("p");
+// cardEntry.setAttribute("class", "cardEntry");
+// cardEntry.textContent= card.entry;
+//  cardDiv.appendChild(cardEntry);
+
+// cardsContainer.appendChild(cardDiv);
+
+// })
+
+// rootOne.appendChild(cardsContainer);
+
+// }
+
+
+// FOOTER
+
+
+const foot= [{
+    text: "© 2026 Personal Chronicles. Design for reflection."},
+    {text:"Privacy", url:"privacy.html"},
+    {text:"Terms", url:"terms.html"},
+    {text:"Archive", url:"archive.html"
+}]
+
+
+// const footerElement= document.createElement("footer");
+// footerElement.id="footer";
+
+const footerElement= document.getElementById("footer");
+
+function footer(){
+    const ul=document.createElement("ul");
+foot.forEach((item)=> {
+
+    const li= document.createElement("li");
+    if(item.url){
+    const a= document.createElement("a");
+    a.setAttribute("href",item.url);
+    a.textContent= item.text;
+
+    li.appendChild(a);
+    } else{
+        li.textContent=item.text;
+    }
+
+    ul.appendChild(li);
+
+
+})
+
+footerElement.appendChild(ul);
+// document.body.appendChild(footerElement);
+
+};
+
+// khsndfkl
+
+
+// I NEED HELP WITH THIS CODE!!!!!!!!!!!!!!!!!!!!!!!1
+function createMenu(card){
+    
+
+
+    const menuList = [
+        {name: "Open", url:""},
+        {name: "Edit", url:""},
+        {name: "Delete", url:""},
+        {name: "Archive", url:""}
+
+    ];
+
+const previewMenuDiv= document.createElement("div");
+previewMenuDiv.setAttribute("class","menuDiv");
+previewMenuDiv.setAttribute("style","display:none;");
+
+     const ul=document.createElement("ul");
+
+    menuList.forEach(item=>{
+       
+        const li= document.createElement("li");
+        const a= document.createElement("a");
+        a.setAttribute("href",item.url);
+        a.textContent=item.name;
+
+        li.appendChild(a);
+         ul.appendChild(li);
+    })
+
+    previewMenuDiv.appendChild(ul);
+
+    return previewMenuDiv;
+
+
+}
+
+
+
+function menu(cardNumber){
+
+//   toggle logic for displaying the menu div. 
+// also re explain where you are calling createMenu.
+}
+
+
+// for the design of the card
 function cardData(cards){
 const cardsContainer= document.createElement("div");
 cardsContainer.id="cardsContainer";
 
+
 cards.forEach (card =>{
+        
 
     const cardDiv= document.createElement("div");
     cardDiv.setAttribute("class", "card");
 
     const cardDate= document.createElement("p");
+    cardDate.setAttribute("class","cardDate");
     cardDate.textContent= card.date;
 
- 
+    const button=document.createElement("button");
+    button.setAttribute("class","menuButton");
+    button.addEventListener("click",()=> menu(card.id));
+    // i copied the code in the line above
+    button.textContent="⋮";
+
+  
 cardDiv.appendChild(cardDate);
+cardDiv.appendChild(createMenu());
+cardDiv.appendChild(button);
+
 
     const cardHeading= document.createElement("h2");
     cardHeading.textContent= card.heading;
@@ -133,13 +269,13 @@ cardDiv.appendChild(cardDate);
 cardDiv.appendChild(cardHeading);
 
 const cardEntry= document.createElement("p");
+cardEntry.setAttribute("class", "cardEntry");
 cardEntry.textContent= card.entry;
  cardDiv.appendChild(cardEntry);
 
 cardsContainer.appendChild(cardDiv);
 
 })
-
-rootOne.appendChild(cardsContainer);
+ rootOne.appendChild(cardsContainer);
 
 }

@@ -5,21 +5,76 @@ border-radius: 40px;
 }
 
 
+
 #globalHeader{
+    padding:2px;
+     display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
     border: 2px solid blue;
-
+    padding: 10px;
 }
 
-#pageIntro{
-
- border: 2px solid red;
+#pageIntro > p{
+    font-size:large;
+    display:flex;
+    flex-wrap:wrap;
+    /* border: 2px solid black; */
+    width:35%;
+}
+#pageIntro {
+margin-left:3rem;
+/* justify-self: center; */
+margin-top: 1rem ;
+margin-bottom: 1rem;
+border: 2px solid red;
+ padding: 10px;
 }
 
-#cardsContainer{
+
+/* #cardsContainer{
 
  border: 2px solid green;
-}
+} */
 
 .card{
     border: 5px dotted purple;
+    padding: 10px;
+}
+
+#pageHeading{
+    padding: inherit;
+}
+
+#footer li {
+list-style: none;
+
+}
+
+#footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+
+
+#footer {
+  padding:10px;
+    border: 2px dotted black;
+    font-size: small;
+}
+
+.cardDate{
+    display: inline;
+}
+
+.menuButton{
+    background-color: inherit;
+    font-weight: bold;
+    border: none;
+    font-size: medium;
 }
