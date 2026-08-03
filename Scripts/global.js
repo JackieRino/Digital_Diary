@@ -190,9 +190,8 @@ footerElement.appendChild(ul);
 
 
 // I NEED HELP WITH THIS CODE!!!!!!!!!!!!!!!!!!!!!!!1
-function createMenu(card){
-    
 
+    function createMenu(){
 
     const menuList = [
         {name: "Open", url:""},
@@ -204,7 +203,7 @@ function createMenu(card){
 
 const previewMenuDiv= document.createElement("div");
 previewMenuDiv.setAttribute("class","menuDiv");
-previewMenuDiv.setAttribute("style","display:none;");
+// previewMenuDiv.setAttribute("style","display:flex;");
 
      const ul=document.createElement("ul");
 
@@ -224,15 +223,18 @@ previewMenuDiv.setAttribute("style","display:none;");
     return previewMenuDiv;
 
 
-}
+};
 
 
 
-function menu(cardNumber){
+// function menu(cardNumber){
 
-//   toggle logic for displaying the menu div. 
-// also re explain where you are calling createMenu.
-}
+
+//     // toggle using the class vs the style property
+
+// //   toggle logic for displaying the menu div. 
+// // also re explain where you are calling createMenu.
+// }
 
 
 // for the design of the card
@@ -251,15 +253,19 @@ cards.forEach (card =>{
     cardDate.setAttribute("class","cardDate");
     cardDate.textContent= card.date;
 
+cardDiv.appendChild(cardDate);
+
+cardDiv.appendChild(createMenu());
+
     const button=document.createElement("button");
-    button.setAttribute("class","menuButton");
-    button.addEventListener("click",()=> menu(card.id));
-    // i copied the code in the line above
+     button.setAttribute("class","menuButton");
+    button.addEventListener("click",()=> {
+        cardDiv.querySelector(".menuDiv").classList.toggle("show");});
     button.textContent="⋮";
 
   
-cardDiv.appendChild(cardDate);
-cardDiv.appendChild(createMenu());
+
+
 cardDiv.appendChild(button);
 
 
@@ -279,3 +285,5 @@ cardsContainer.appendChild(cardDiv);
  rootOne.appendChild(cardsContainer);
 
 }
+// to do next time:
+// css styling and the url of the preview menu
