@@ -8,8 +8,8 @@ headerTemplate();
 // ########
 
 const intro={
-    heading: "Daily Reflections",
-    paragraph: "A sanctuary for your thoughts. Captured in the quiet moments between the noise of the world"
+    heading: "Memory Vault",
+    paragraph: "Yesterday's whispers, today's refelctions and tomorrow's treasures. Where fleeting moments find a home and every chapter of your story is safely kept. "
 }
 
 pageIntro(intro);

@@ -15,6 +15,7 @@ border-radius: 40px;
     padding: 10px;
 }
 
+
 #pageIntro > p{
     font-size:large;
     display:flex;
@@ -27,7 +28,7 @@ margin-left:3rem;
 /* justify-self: center; */
 margin-top: 1rem ;
 margin-bottom: 1rem;
-border: 2px solid red;
+/* border: 2px solid red; */
  padding: 10px;
 }
 
