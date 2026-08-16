@@ -1,7 +1,7 @@
 /* Header Css */
 
 a:link{
-    color:rgb(225, 176, 97);
+    color:#292725;
     text-decoration: none;
 }
 
@@ -10,7 +10,7 @@ a:hover, a:focus{
 } 
 
 a:visited{
-    color:whitet;
+
     text-decoration: underline;
 }
 
