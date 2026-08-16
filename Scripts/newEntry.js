@@ -5,7 +5,7 @@ console.log(navData);
 
  function add(navItems){
        navItems.unshift({name:"Archive", url:"", icon:false});
-      navItems.splice(1,1);
+      // navItems.splice(1,1);
       navItems.splice(2,1);
 
  
@@ -19,9 +19,10 @@ console.log(add(navItems));
 
  window.addEventListener("load",page);
 
+const headerPhrase = "Begin A Chronicle...";
  function page(){
 
-headerTemplate();
+headerTemplate(headerPhrase);
 
 footer();
 

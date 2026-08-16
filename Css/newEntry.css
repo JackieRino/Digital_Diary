@@ -80,9 +80,10 @@ a:visited{
      font-weight: bold;
 }
 
-textarea{
+#textarea{
     /* width:958px;
     height:581px; */
+    display: flex;
     justify-self: center;
 }
 
