@@ -301,4 +301,5 @@ cardsContainer.appendChild(cardDiv);
 # archive in new entry doesnt lead anywhere
 #insert memory in newentry doesnt work or lead anywhere
 #the footer links dont lead to anywhere; terms/privary/archive 
-#settingings icon on the vault page doesnt lead anywhere
+#settingings icon on the vault page doesnt lead anywhere 
+*/

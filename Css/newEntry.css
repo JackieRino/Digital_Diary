@@ -1,8 +1,6 @@
 
 
 body{
-background-color: rgba(200, 198, 197, 0.871);
-color:black;
 /* font-weight: bold; */
 }
 
@@ -55,7 +53,7 @@ h1{
 }
 
 a:link{
-    color:black;
+    color:#292725;
     text-decoration: none;
 }
 
@@ -148,4 +146,15 @@ padding:20px;
 
 .tagRoot.show{
 display: block;
+}
+
+#tagMenu li{
+    list-style-type: none;
+    margin-bottom: 3px;
+}
+
+#tagMenu li button{
+    background-color: #844d56;
+    border-radius: 2px;
+    padding:3px;
 }

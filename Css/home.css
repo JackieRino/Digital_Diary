@@ -8,7 +8,7 @@
 
 
 #cardsContainer{
-    border: 5px dotted pink;
+    /* border: 5px dotted pink; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto auto;
@@ -22,7 +22,7 @@
 
 .card:first-child{
     grid-column: span 2;
-    background-color: aqua;
+    background-color: #deb35d;
     
 }
 
@@ -42,17 +42,18 @@
 .card:nth-child(2){
     grid-column: span 1;
     
-    background-color: blueviolet;
+    background-color: #8fa58a;
 }
 
 .card:nth-child(3){
     grid-column: span 1 ;
+    background-color:#7a3e48 ;
   
 }
 
 .card:nth-child(4){
    grid-column: span 2;
-   background-color: brown;
+   background-color:#f9efdd;
 }
 
 #pageIntro > p{
@@ -80,7 +81,7 @@ margin-bottom: 1rem;
 }
 
 #section{
-    border:2px dotted black;
+    /* border:2px dotted black; */
     display: flex;
     justify-content: center;
 }

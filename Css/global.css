@@ -2,6 +2,8 @@ body{
 /* responsiveness code */
 font-family: cursive;
 border-radius: 40px;
+background-color: #eee1c7;
+color: #292725;
 }
 
 
@@ -11,7 +13,7 @@ border-radius: 40px;
      display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 10px;
 }
 
@@ -39,7 +41,8 @@ margin-bottom: 1rem;
 } */
 
 .card{
-    border: 5px dotted purple;
+    border: 3px dotted #292725; 
+    border-radius: 5px;
     padding: 10px;
 }
 

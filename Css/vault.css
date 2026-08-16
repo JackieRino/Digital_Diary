@@ -24,11 +24,13 @@ padding: 30px 10px 30px 20px;
 
 #pageIntro{
     border-radius: 10px;
-    background-color: rgb(245, 220, 220);
-    border:3px solid rgb(235, 213, 213);
+    /* background-color: rgb(245, 220, 220); */
+    /* border:3px solid rgb(235, 213, 213); */
 }
 
 .card{
-    background-color: rgb(243, 234, 234);
-    border-radius: 10px;
+    background-color:#8fa58a;
+        border-radius: 10px;
+        margin-right: 50px;
+        padding: 20px;
 }
