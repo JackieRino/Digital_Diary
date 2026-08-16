@@ -291,3 +291,14 @@ cardsContainer.appendChild(cardDiv);
 }
 // to do next time:
 // css styling and the url of the preview menu
+
+
+
+/*WHAT CURRENTLY DOESNT WORK?
+
+#the links/buttons on mini menu on the hope page that allows for editing, deleting and archiving.
+#the profile icon leads to an undeveloped profile.html
+# archive in new entry doesnt lead anywhere
+#insert memory in newentry doesnt work or lead anywhere
+#the footer links dont lead to anywhere; terms/privary/archive 
+#settingings icon on the vault page doesnt lead anywhere
