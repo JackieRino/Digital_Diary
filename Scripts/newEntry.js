@@ -27,8 +27,17 @@ footer();
 
  }
 
+ const storedCards= JSON.parse(localStorage.getItem("cardStorage"));
 
-const allCards = [...cards];
+let allCards;
+
+if (storedCards){
+  allCards = storedCards;
+}else{
+  allCards=[...cards];
+}
+// above code. basically if there is a stored version in local storage use that, if not use 
+// a copy of the component as the starting baseline.
 
  let entry={id: "",
               date: "",
@@ -221,9 +230,12 @@ entry = {id: "",
 // i want to do something with the stored data. right now i just keep 
 // updating it as per new entry
 
-const storedCards= JSON.parse(localStorage.getItem("cardStorage"));
+// const storedCards= JSON.parse(localStorage.getItem("cardStorage"));
 
 
+
+// INSERT MEMORY
+// not sure how this will work. pin it for now.
 
 
 // const insertMemory= document.getElementById("insertMemory");
