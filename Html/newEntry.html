@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel ="stylesheet" href="styles.css">
-    <link rel ="stylesheet" href="newEntry.css">
+     <link rel ="stylesheet" href="/Css/global.css">
+     <link rel="stylesheet" href="/Css/component.css">
+    <link rel ="stylesheet" href="/Css/newEntry.css">
     
     <script src="https://kit.fontawesome.com/bd68228cee.js" crossorigin="anonymous"></script>
     <title>New Entry</title>
      
 </head>
-<body id="newEntryBody">
-    <header id="entryHeader" className="allHeader">
-       
-       <h1 style="font-size: medium;">Digital Diary</h1>
-     <nav id="newEntryNav"  className ="allNav"> 
-            <ul>
+<body >
+    <main id="rootOne"></main>       
 
-               <li><a>Archive</a></li>
-                <li><a href="/newEntry.html"  id="newEntryLink">New Entry</a></li>
-                <li><a href="/vault.html"> <i class="fa-regular fa-circle-user"></i></a></li>
-            </ul>
-
-         </nav>
-        
-       
-    </header>
-
-
-<main>
-    <form method="POST" action="?">
-        <!-- what would be the value of action here? should it be the server? is this where API Local Storage comes in? -->
 
     <div id="reflectionTitle">
         <h2 id="date"></h2>
         <input type="text" 
                 id="entryTitle"
                 placeholder="Untitled Reflection"
-                size="50">
+                size="50"
+                >
     
         <ul>
             <li><button id="thoughtfulButton" class="allButtons"> <i class="fa-solid fa-face-smile"></i> Thoughtful</button> </li>
-            <li><button id="iconButton" class="allButtons"><i class="fa-solid fa-plus"></i> Add Tag </button> </li>
-        </ul>
+            <li><button id="tagButton" class="allButtons"><i class="fa-solid fa-plus"></i> Add Tag </button> </li>
+        </ul> 
 </div>
+<div id="tagRoot"></div>
+
+    <form method="POST" action="?">
+        <!-- what would be the value of action here? should it be the server? is this where API Local Storage comes in? i think for now its local storage -->
 
         <textarea id="textarea"
          placeholder="Begin your reflection..." 
@@ -55,18 +43,22 @@
 
 </form>
 
-</main>
+<div id="saveEntryMenu">
+    <ul>
+        <li><button id="insertMemory"><i class="fa-solid fa-image"></i> Insert Memory</button></li>
+        <li><button id="private"><i class="fa-solid fa-lock"></i> Private</button></li>
+        <li><button id="discard">Discard</button></li>
+        <li><button id="save">Save Entry</button></li>
+    </ul>
+</div>
 
 
-    <div id="footerSection">
-        <ul>
-            <li><button><i class="fa-regular fa-image"></i> Insert Memory</button></li>
-            <li><button class="allButtons">Private</button></li>
-            <li><button class="allButtons">Discard</button></li>
-            <li><button class="allButtons">Save Entry</button></li>
-        </ul>
-    </div>
+    <footer id="footer"></footer>
 
-    <script src="script.js"></script>
+    <script src="/Scripts/navData.js"></script>
+    <script src="/Scripts/cardData.js"></script>
+    <script src="/Scripts/newEntry.js"></script>
+    <script src="/Scripts/global.js"></script>
+    
 </body>
 </html>

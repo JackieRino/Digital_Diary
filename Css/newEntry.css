@@ -108,3 +108,43 @@ padding:20px;
     
     
 }
+
+#saveEntryMenu ul{
+     display:flex;
+ justify-content: space-between;
+
+}
+
+#saveEntryMenu li{
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#saveEntryMenu button{
+    padding: 3px;
+    border:none;
+    background-color: inherit;
+
+}
+
+#saveEntryMenu button:active , #thoughtfulButton:active{
+    font-size: large;
+}
+
+
+
+#save{
+    font-weight: bold;
+    
+}
+
+
+
+.tagRoot{
+    display: none;
+}
+
+.tagRoot.show{
+display: block;
+}

@@ -1,4 +1,6 @@
 // NAVIGATION
+
+
 // const navItems = [
 //      {name:"Home",      url: "/Html/home.html",    icon:false },
 //      {name:"New Entry", url:"/Html/newEntry.html", icon:false}, 
@@ -189,7 +191,7 @@ footerElement.appendChild(ul);
 // khsndfkl
 
 
-// I NEED HELP WITH THIS CODE!!!!!!!!!!!!!!!!!!!!!!!1
+// PREVIEW MENU AT THE CARD
 
     function createMenu(){
 
@@ -237,7 +239,9 @@ previewMenuDiv.setAttribute("class","menuDiv");
 // }
 
 
-// for the design of the card
+// THE CARDS
+
+
 function cardData(cards){
 const cardsContainer= document.createElement("div");
 cardsContainer.id="cardsContainer";

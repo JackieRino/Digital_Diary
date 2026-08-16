@@ -14,25 +14,6 @@ a:visited{
     text-decoration: underline;
 }
 
-
-
-
-
-
-#globalHeader{
-    /* need css for header spacing */
-}
-
-#pageHeading{
-
-/* Css for the header- visual and positioning */
-
-}
-
-#globalNav{
-    /* css for the nav. css for the ul in the nav and for the li */
-}
-
 #globalNav li{
 
     list-style-type: none;
