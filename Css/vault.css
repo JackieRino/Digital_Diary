@@ -1,5 +1,6 @@
-body{
-    background-color: antiquewhite;
+#rootOne{
+    background-color:#b6d1b0;
+    border-radius: 5px;
 }
 
 .cardEntry{
@@ -24,13 +25,26 @@ padding: 30px 10px 30px 20px;
 
 #pageIntro{
     border-radius: 10px;
-    /* background-color: rgb(245, 220, 220); */
-    /* border:3px solid rgb(235, 213, 213); */
+     background-color:;
+     border:3px solid #1e4316; 
 }
 
 .card{
-    background-color:#8fa58a;
+    
         border-radius: 10px;
-        margin-right: 50px;
+        margin-right: 20px;
         padding: 20px;
+}
+
+.card:nth-child(3){
+    background-color:#deb35d;
+}
+
+.card:nth-child(2){
+background-color: #80444e;
+}
+
+.card:first-child{
+    background-color: #eee1c7;
+
 }

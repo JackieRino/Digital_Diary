@@ -69,6 +69,7 @@ list-style: none;
 #footer {
   padding:10px;
     border: 2px dotted black;
+    border-radius:10px;
     font-size: small;
 }
 

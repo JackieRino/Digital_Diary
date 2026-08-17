@@ -60,8 +60,8 @@
     font-size:large;
     display:flex;
     flex-wrap:wrap;
-    /* border: 2px solid black; */
-    width:35%;
+   
+    /* width:35%; */
 }
 
 #pageIntro {
@@ -69,7 +69,9 @@ margin-left:3rem;
 /* justify-self: center; */
 margin-top: 1rem ;
 margin-bottom: 1rem;
-
+ border: 2px double #deb35d;
+ 
+ 
 }
 
 #globalHeader{
