@@ -44,6 +44,8 @@ margin-bottom: 1rem;
     border: 3px dotted #292725; 
     border-radius: 5px;
     padding: 10px;
+    /* min-width: 1rem; */
+    
 }
 
 #pageHeading{
@@ -63,6 +65,9 @@ list-style: none;
     justify-content: space-between;
 }
 
+#footer a{
+    cursor: not-allowed;
+}
 
 
 
@@ -73,15 +78,16 @@ list-style: none;
     font-size: small;
 }
 
-.cardDate{
+/* .cardDate{
     display: inline;
-}
+} */
 
 .menuButton{
     background-color: inherit;
     font-weight: bold;
     border: none;
     font-size: medium;
+    cursor: not-allowed;
 }
 
 .card{
@@ -111,3 +117,8 @@ list-style: none;
     color:black;
     font-weight: bold;
 }  
+
+.cardDate{
+    display: flex;
+    flex-wrap: wrap;
+}

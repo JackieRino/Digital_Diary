@@ -100,6 +100,10 @@ margin-bottom: 1rem;
     list-style: none;
 }
 
+#sectionLink{
+    cursor: not-allowed;
+}
+
 /* .menuButton{
     background-color: inherit;
     font-weight: bold;
