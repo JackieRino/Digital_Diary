@@ -10,18 +10,23 @@
 #cardsContainer{
     /* border: 5px dotted pink; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr  ;
     grid-template-rows: auto auto;
      gap:0.5rem;
       width: 70%; 
+      /* align-self:center; */
       margin-left: 3rem;
+      /* align-items: stretch; */
+      /* justify-items: stretch; */
 
 }
 
 
 
 .card:first-child{
-    grid-column: span 2;
+    /* grid-column: span 2; */
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: #deb35d;
     
 }
@@ -40,8 +45,9 @@
 }
 
 .card:nth-child(2){
-    grid-column: span 1;
-    
+    /* grid-column: span 1; */
+    grid-column-start: 3;
+    grid-column-end: 3;
     background-color: #8fa58a;
 }
 
@@ -52,7 +58,9 @@
 }
 
 .card:nth-child(4){
-   grid-column: span 2;
+   /* grid-column: span 2; */
+   grid-column-start: 2;
+   grid-column-end:4;
    background-color:#f9efdd;
 }
 

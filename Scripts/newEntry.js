@@ -219,7 +219,8 @@ entry = {id: "",
               date: "",
               heading:"",
               entry:""};
-
+              
+// Also the input areas do not reset after the save button has been clicked. they should.
               console.log("this is new entry");
               console.log(entry);
 

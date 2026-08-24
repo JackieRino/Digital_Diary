@@ -35,6 +35,7 @@ navItems.forEach (item=>{
     if(item.icon){
         const iconElement = document.createElement("i");
         iconElement.className=item.iconName;
+        // iconElement.className=item.icon;
 
         link.appendChild(iconElement);
 
