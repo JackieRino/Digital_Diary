@@ -57,7 +57,10 @@ margin-bottom: 1rem;
 list-style: none;
 
 }
-
+.card h2{
+    display: flex;
+    flex-wrap: wrap;
+}
 #footer ul{
     display: flex;
     flex-direction: row;

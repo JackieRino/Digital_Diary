@@ -34,7 +34,7 @@
 }
 
 .card{
-    min-width: 0;
+    min-width: 125px;
     /* this prevents the long content from forcing the grid item wider */
 }
 
@@ -51,6 +51,8 @@
     grid-column-start: 3;
     grid-column-end: 3;
     background-color: #8fa58a;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card:nth-child(3){
