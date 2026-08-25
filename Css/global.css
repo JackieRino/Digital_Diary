@@ -24,6 +24,7 @@ color: #292725;
     flex-wrap:wrap;
     /* border: 2px solid black; */
     width:35%;
+
 }
 #pageIntro {
 margin-left:3rem;
@@ -32,6 +33,7 @@ margin-top: 1rem ;
 margin-bottom: 1rem;
 /* border: 2px solid red; */
  padding: 10px;
+ min-width: 125px;
 }
 
 
@@ -61,6 +63,12 @@ list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
+
+.card{
+    min-width: 125px;
+    /* this prevents the long content from forcing the grid item wider */
+}
+
 #footer ul{
     display: flex;
     flex-direction: row;

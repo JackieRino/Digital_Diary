@@ -33,10 +33,10 @@
     
 }
 
-.card{
+/* .card{
     min-width: 125px;
     /* this prevents the long content from forcing the grid item wider */
-}
+ 
 
 .cardEntry{
     overflow: hidden;
