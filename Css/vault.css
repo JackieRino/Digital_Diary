@@ -12,12 +12,14 @@
     /* this gives ellipsis(...) */
 }
 
+
+
 .card{
     margin:10px;
 }
 
 #cardsContainer{
-
+display: block;
 padding: 30px 10px 30px 20px;
 /* margin-top: 5pxpx; */
 

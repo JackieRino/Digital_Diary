@@ -23,4 +23,5 @@ a:visited{
 #globalNav ul{
  display:flex;
  justify-content: flex-end;
+ flex-wrap: wrap;
 }

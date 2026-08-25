@@ -4,7 +4,7 @@ console.log(navData);
 
 
  function add(navItems){
-       navItems.unshift({name:"Archive", url:"", icon:false});
+       navItems.unshift({name:"Archive", url:"..//Html/archive.html", icon:false});
       // navItems.splice(1,1);
       navItems.splice(2,1);
 

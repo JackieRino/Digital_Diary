@@ -1,8 +1,8 @@
 
 function add(navData){
 
-        navData.push({name:"Archive", url:"", icon:false},
-                    {name:"Settings", url:"", icon:true, iconName:"fa-solid fa-gear"});
+        navData.push({name:"Archive", url:"..//Html/archive.html", icon:false},
+                    {name:"Settings", url:"..//Html/settings.html", icon:true, iconName:"fa-solid fa-gear"});
 
         return navData;
 

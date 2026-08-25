@@ -60,11 +60,11 @@ a:link{
 }
 
 a:hover, a:focus{
-    color:chocolate;
+    font-size: large;
 } 
 
 a:visited{
-    color:#39732e;
+    
     text-decoration: underline;
 }
 
@@ -134,10 +134,18 @@ padding:20px;
 
 }
 
-#saveEntryMenu button:active , #thoughtfulButton:active{
+#saveEntryMenu button:active , #saveEntryMenu button:focus{
     font-size: large;
 }
 
+
+
+#thoughtfulButton:hover{
+    font-size: large;
+}
+#thoughfulButton:active{
+    font-weight: bolder;
+}
 
 
 #save{
