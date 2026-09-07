@@ -26,6 +26,30 @@ color: #292725;
     width:35%;
 
 }
+@media only screen and (max-width: 600px) {
+    #pageIntro > p{
+        font-size:medium;
+        width: 25vw;
+    }
+
+    #pageIntro{
+        display:block;
+        flex-wrap: wrap;
+        justify-items: center;
+        
+    }
+
+    #pageHeading{
+        font-size: medium;
+    }
+
+    #globalHeader{
+        justify-content: center;
+    }
+}
+
+
+
 #pageIntro {
 margin-left:3rem;
 /* justify-self: center; */
@@ -134,3 +158,9 @@ list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
+/* 
+@media (max-width 700px){
+    body{
+        background-color: blue;
+    }
+} */
