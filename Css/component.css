@@ -6,13 +6,15 @@ a:link{
 }
 
 a:hover, a:focus{
-    color:rgb(239, 176, 132);
+    font-size: large;
 } 
 
 a:visited{
-
     text-decoration: underline;
 }
+
+
+
 
 #globalNav li{
 

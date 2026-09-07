@@ -88,7 +88,10 @@ a:visited{
     border-radius: 5px;
     background-color: #f9efdd;
     border:3px solid #39732e;
+    width:70vw;
 }
+
+
 
 #reflectionTitle{
 margin-left: 20px;
@@ -113,6 +116,15 @@ padding:20px;
     border: 2px solid #39732e;
     
     
+}
+@media only screen and (max-width: 600px) {
+
+    #saveEntryMenu ul{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+
 }
 
 #saveEntryMenu ul{
@@ -148,10 +160,10 @@ padding:20px;
 }
 
 
-#save{
+/* #save{
     font-weight: bold;
     
-}
+} */
 
 
 
