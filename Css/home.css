@@ -27,6 +27,11 @@
         display:flex;
         flex-direction: column;
     }
+
+    .card{
+        width:50vw;
+        height:60vh;
+    }
 }
 
 
@@ -74,22 +79,12 @@
    background-color:#f9efdd;
 }
 
-#pageIntro > p{
-    font-size:large;
-    display:flex;
-    flex-wrap:wrap;
-   
-    /* width:35%; */
-}
+
 
 #pageIntro {
-margin-left:3rem;
-/* justify-self: center; */
-margin-top: 1rem ;
-margin-bottom: 1rem;
- border: 2px double #deb35d;
- 
- 
+ border-top: 2px double #deb35d;
+  border-bottom: 2px double #deb35d;
+  
 }
 
 

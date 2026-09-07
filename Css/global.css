@@ -23,17 +23,18 @@ color: #292725;
     display:flex;
     flex-wrap:wrap;
     /* border: 2px solid black; */
-    width:35%;
+    /* width:35%; */
 
 }
 @media only screen and (max-width: 600px) {
     #pageIntro > p{
         font-size:medium;
-        width: 25vw;
+    
     }
 
     #pageIntro{
-        display:block;
+
+        display:flex;
         flex-wrap: wrap;
         justify-items: center;
         
@@ -51,13 +52,10 @@ color: #292725;
 
 
 #pageIntro {
-margin-left:3rem;
-/* justify-self: center; */
-margin-top: 1rem ;
-margin-bottom: 1rem;
-/* border: 2px solid red; */
+margin: 1rem 0 1rem 3rem;
  padding: 10px;
- min-width: 125px;
+ width:50vw;
+ border-radius:10px ;
 }
 
 
@@ -68,11 +66,14 @@ margin-bottom: 1rem;
 
 .card{
     border: 3px dotted #292725; 
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px;
     /* min-width: 1rem; */
-    
+    position: relative; 
+    min-width: 125px;
+    /* this prevents the long content from forcing the grid item wider */
 }
+
 
 
 #pageHeading{
@@ -88,10 +89,8 @@ list-style: none;
     flex-wrap: wrap;
 }
 
-.card{
-    min-width: 125px;
-    /* this prevents the long content from forcing the grid item wider */
-}
+
+   
 
 #footer ul{
     display: flex;
@@ -126,9 +125,7 @@ list-style: none;
     cursor: not-allowed;
 }
 
-.card{
-    position: relative;
-}
+
 
 
 .menuDiv{

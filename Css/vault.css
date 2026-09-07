@@ -25,10 +25,9 @@ padding: 30px 10px 30px 20px;
 
 }
 
-#pageIntro{
-    border-radius: 10px;
-     background-color:;
-     border:3px solid #1e4316; 
+#pageIntro{    
+     border-top:3px solid #1e4316; 
+     border-bottom: 3px solid #1e4316;
 }
 
 .card{
