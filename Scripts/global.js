@@ -153,9 +153,9 @@ to this function.
 
 const foot= [{
     text: "© 2026 Personal Chronicles. Design for reflection."},
-    {text:"Privacy", url:"privacy.html"},
-    {text:"Terms", url:"terms.html"},
-    {text:"Archive", url:"archive.html"
+    {text:"Privacy", url:"..//Html/archive.html"},
+    {text:"Terms", url:"..//Html/archive.html"},
+    {text:"Archive", url:"..//Html/archive.html"
 }]
 
 
