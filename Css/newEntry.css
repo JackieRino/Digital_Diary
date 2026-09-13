@@ -169,19 +169,55 @@ padding:20px;
 
 .tagRoot{
     display: none;
+    
 }
 
 .tagRoot.show{
-display: block;
+display: flex;
+justify-content: end;
+/* position:relative; */
+
+height:200px;
+
 }
 
-#tagMenu li{
+#tagRoot{
+    width:40vw;
+    height:10vh;
+    position:absolute;
+    top:11rem;
+    right:1rem;
+
+}
+
+
+
+
+
+/* #tagMenu li{
     list-style-type: none;
     margin-bottom: 3px;
+} */
+
+.tagButtons{
+    border: 2px solid #39732e;
+    border-radius: 2px;
+    padding:4px;
+    background-color: inherit;
+    margin: 10px;
 }
 
-#tagMenu li button{
-    background-color: #844d56;
-    border-radius: 2px;
-    padding:3px;
+#date{
+    border:none;
+    display: block;
+    width: 50vw;
+    max-width: 200px;
+    background-color: inherit;
+     padding:5px;
+    font-weight: bold;
+}
+
+.clicked{
+    background-color: #e4bc6c;
+    
 }

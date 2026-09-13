@@ -10,9 +10,11 @@ window.addEventListener("load",page);
 
 function page(){
 
+
 headerTemplate(headerPhrase);
 
 // ########
+
 
 const intro={
     heading: "Daily Reflections",

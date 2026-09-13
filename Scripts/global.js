@@ -203,7 +203,7 @@ footerElement.appendChild(ul);
         {name: "Archive", url:""}
 
     ];
-
+// i think these need to be buttons not anchor tags because they must do something not lead somewhere
 const previewMenuDiv= document.createElement("div");
 previewMenuDiv.setAttribute("class","menuDiv");
 // previewMenuDiv.setAttribute("style","display:flex;");
@@ -267,6 +267,7 @@ cardDiv.appendChild(createMenu());
     button.addEventListener("click",()=> {
         cardDiv.querySelector(".menuDiv").classList.toggle("show");});
     button.textContent="⋮";
+    // create a button, class = menuButton. when its clicked, select the div with the class menuDiv and toggle on and off the class show.
 
   
 

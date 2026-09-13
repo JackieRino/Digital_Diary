@@ -12,9 +12,117 @@
      
 </head>
 <body >
-    <main id="rootOne"></main>       
+    <main id="rootOne"></main> 
+    
+    <form id="form">
+        <!-- what would be the value of action here? should it be the server? is this where API Local Storage comes in? i think for now its local storage -->
+
+    <div id="reflectionTitle">
+        
+            <input
+            id="date" 
+                name="date"
+                value=""
+                readonly
+                
+                > 
+
+        <input type="text"
+                name="title" 
+                id="entryTitle"
+                placeholder="Untitled Reflection"
+                size="20px"
+                >
+    
+        <button id="thoughtfulButton" 
+                class="allButtons"
+                 type="button"
+                 name="thoughtfulButton"
+                 value=""
+                 > <i class="fa-solid fa-face-smile"></i> Thoughtful</button>
+
+        <button id="tagButton"
+                 class="allButtons"
+                 type="button"
+                 name="tagButton"><i class="fa-solid fa-plus"></i> Add Tag </button>
+
+<div id="tagRoot"></div>
+</div>
 
 
+    
+
+        <textarea id="textarea"
+         placeholder="Begin your reflection..." 
+         name="reflection Body"
+         cols="60"
+         rows="20"
+        ></textarea>
+    
+
+
+
+<div id="saveEntryMenu">
+    
+        <button id="insertMemory"
+                type="button"
+                name="insertMemory"><i class="fa-solid fa-image"></i> Insert Memory</button>
+
+        <button id="private"
+                type="button"
+                name="private"
+                ><i class="fa-solid fa-lock"></i> Private</button>
+
+        <button id="discard"
+                type="button"
+                name="delete">Discard</button>
+
+        <button id="save"
+                type="submit"
+                name="submit">Save Entry</button>
+    
+</div>
+
+</form>
+
+
+ <footer id="footer"></footer>
+
+    <script src="../Scripts/navData.js"></script>
+    <script src="../Scripts/cardData.js"></script>
+    <script src="../Scripts/newEntry.js"></script>
+    <script src="../Scripts/global.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
     <div id="reflectionTitle">
         <h2 id="date"></h2>
         <input type="text" 
@@ -32,7 +140,7 @@
 <div id="tagRoot"></div>
 
     <form method="POST" action="?">
-        <!-- what would be the value of action here? should it be the server? is this where API Local Storage comes in? i think for now its local storage -->
+        //what would be the value of action here? should it be the server? is this where API Local Storage comes in? i think for now its local storage //
 
         <textarea id="textarea"
          placeholder="Begin your reflection..." 
@@ -52,14 +160,6 @@
         <li><button id="save">Save Entry</button></li>
     </ul>
 </div>
+ -->
 
-
-    <footer id="footer"></footer>
-
-    <script src="../Scripts/navData.js"></script>
-    <script src="../Scripts/cardData.js"></script>
-    <script src="../Scripts/newEntry.js"></script>
-    <script src="../Scripts/global.js"></script>
-    
-</body>
-</html>
+   
