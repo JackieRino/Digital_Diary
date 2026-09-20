@@ -1,0 +1,17 @@
+body {
+    background-color:#7a3e48 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px dotted wheat;
+
+    
+}
+
+a{
+    font-size: larger;
+    color:antiquewhite;
+    
+}
