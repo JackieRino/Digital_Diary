@@ -50,7 +50,8 @@ if (storedCards){
 // ## THIS SECTION CREATES THE DATE FORMAT AND displays it as the value of the input at the date Id (updated*)
 const entryDate= document.getElementById("date");
 
- window.addEventListener("load",
+ window.addEventListener("load",updateDate);
+
 function updateDate(){
 
     const now = new Date();
@@ -68,29 +69,10 @@ function updateDate(){
    entryDate.value= formattedDate;
 
 
-});
+};
 // this is okay. 
               
- 
-// THOUGHTFUL (updated*)
-const thoughtfulButton = document.getElementById("thoughtfulButton");
 
- thoughtfulButton.addEventListener("click",thoughtfulHandler);
- 
-  function thoughtfulHandler(event){
-    event.target
-    
-    // remember to remove the class at the form submission
-  
-    if(!thoughtfulButton.value){
-        event.target.classList.add("clicked");
-       return thoughtfulButton.value = true;
-    }else {
-       event.target.classList.remove("clicked");
-       return thoughtfulButton.value="";
-    }
-  
- }
 
 
 
@@ -146,7 +128,7 @@ function createTagMenu(){
 };
 // foro each `tag` inside the tagListArray, create a button for it, whose value, name, type class attributes are those respectively and put the tag.name as the text content. then put each entire button inside the tagList div. 
 
-   
+   const tags=[];
 
  function addTag(event,buttonTag){  
   event.currentTarget.classList.toggle("clicked");
@@ -154,27 +136,30 @@ function createTagMenu(){
 
 if(event.currentTarget.classList.contains("clicked") ){
   
-    
+  const newTag={id: buttonTag.id, addedTag: buttonTag.name};
+    tags.push(newTag)
 
-    entry.tag = [...entry.tag, {id: buttonTag.id, addedTag: buttonTag.name}];
-    console.log(entry.tag);
+  return   tags;
 
   }else{
   
-    entry.tag= entry.tag.filter(tags=>{
-      return buttonTag.id !== tags.id;
-  })
-  
+   const index= tags.findIndex(eachtag=>{
+    return buttonTag.id == eachtag.id;
+      
+  });
 
+  tags.splice(index,1);
+  
+return tags;
   }
   /*#add tag takes event and buttonTag as parameters. these are passed at the function call and at the declaration.
      #when the button is clicked, it calls this function. with every click the classlist "clicked" is toggled on and off. default is off.
-     #if at any particular click, "clicked" has been toggled on, then entry.tag should be a copy of whatever is already inside entry tag,
-     plus a new object containing the new tag and a unique id.
-     #if when clicked the "clicked" class is not there then entry.Tag should be the resulting array of the following: go into entry tag. call each object tag. keep every object where the buttontagid does not equal the tag id. meaning if its been added therell be an equal and itll be removed.
+     #if at any particular click, "clicked" has been toggled on, then newTag variable is created where its assigned an object whose valued are buttonTag id and name.
+     #if when clicked the "clicked" class is not there then 
+     a vairable called index is created whose value is a number resulting from the expression: go into tags, call each object 'eachTag', check is buttonTag id is equal to eachTag id. find the index of that object. 
+     then splice the tags array at the index provided and only that object.
      */
   
-
  }
 
 
@@ -190,17 +175,17 @@ tagRoot.setAttribute("class","tagRoot");
 
 // // DISCARDING ENTRY
 //  const discardButton= document.getElementById("discard");
-//   discardButton.addEventListener("click",discardEntry);
+// discardButton.addEventListener("click",discardEntry);
 
 // function discardEntry(){
 //   confirm("You Are About To Delete Your Entry. Are You Sure?");
-// true &&   (entry={id: "",
-//               date: "",
+//  true &&   (entry={id: "",
+//                date: "",
 //               heading:"",
-//               entry:""});
+//                entry:""});
 
 // console.log(entry);
-// };
+ 
 
 // // UPDATING THE HEADING
 // const entryTitle= document.getElementById("entryTitle");
@@ -268,10 +253,25 @@ tagRoot.setAttribute("class","tagRoot");
 
 
 
+// THOUGHTFUL (updated*)
+const thoughtfulButton = document.getElementById("thoughtfulButton");
+
+ thoughtfulButton.addEventListener("click",thoughtfulHandler);
+ 
+  function thoughtfulHandler(event){
+    event.target.classList.toggle("clicked");
+    
+    // remember to remove the class at the form submission
+    event.target.classList.contains("clicked") ? thoughtfulButton.value ="true" : thoughtfulButton.value = "false";
+
+    return console.log(thoughtfulButton.value);
+  }
+
+
 // # form submission
 
-// const entry= JSON.parse(localStorage.getItem("cardStorage"));
-const entries=[];
+// const entry= 
+const entries= JSON.parse(localStorage.getItem("cardStorage")) ||[];
 
 const formElement= document.getElementById("form");
 
@@ -286,18 +286,40 @@ function onSubmit(event){
 
   const infoObject= Object.fromEntries(formInfo);
   // take the data inside formInfo and store it in the variable infoObject in the formatt of an object.
+const currentTags=[...tags];
 
+  infoObject.thoughtful= thoughtfulButton.value;
+  infoObject.tags= currentTags;
   infoObject.id = crypto.randomUUID();
   // create a unique id for the newly created object
 
 
 entries.unshift(infoObject);
+console.log(entries);
  localStorage.setItem("cardStorage",JSON.stringify(entries));
 
 
 //#RESETTING FORM#
 
 event.currentTarget.reset();
+updateDate();
+
+
+// resets the tags array
+tagRoot.classList.remove("show");
+console.log(JSON.parse(localStorage.getItem("cardStorage")));
+tags.length=0;
+console.log(tags);
+console.log(JSON.parse(localStorage.getItem("cardStorage")));
+// tagList.querySelectorAll(".tagButtons").classList.remove("clicked");
+const clickedButtons = tagList.querySelectorAll(".clicked");
+clickedButtons.forEach(button=>
+  button.classList.remove("clicked"));
+console.log(clickedButtons);
+
+// resets the thoughtful 
+thoughtfulButton.classList.remove("clicked");
+thoughtfulButton.value = "false";
 
 
 }

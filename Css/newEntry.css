@@ -221,3 +221,7 @@ height:200px;
     background-color: #e4bc6c;
     
 }
+
+#insertMemory, #private, #discard{
+    cursor:not-allowed;
+}

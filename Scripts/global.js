@@ -276,13 +276,13 @@ cardDiv.appendChild(button);
 
 
     const cardHeading= document.createElement("h2");
-    cardHeading.textContent= card.heading;
+    cardHeading.textContent= card.title;
 
 cardDiv.appendChild(cardHeading);
 
 const cardEntry= document.createElement("p");
 cardEntry.setAttribute("class", "cardEntry");
-cardEntry.textContent= card.entry;
+cardEntry.textContent= card.reflectionBody;
  cardDiv.appendChild(cardEntry);
 
 cardsContainer.appendChild(cardDiv);
