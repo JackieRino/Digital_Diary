@@ -103,50 +103,6 @@ function pageIntro(intro){
 
 
 
-/*
-The page intro function is just being declared here. if i want it 
-to load, on the specific page.js i want it to load on, i will call it there.
-this means global.js has to load first inorder for the page.js to have a reference
-to this function.
-*/
-
-// CARDS
-
-// card is an object. cards is an array OF OBJECTS
-
-// function cardData(cards){
-// const cardsContainer= document.createElement("div");
-// cardsContainer.id="cardsContainer";
-
-// cards.forEach (card =>{
-
-//     const cardDiv= document.createElement("div");
-//     cardDiv.setAttribute("class", "card");
-
-//     const cardDate= document.createElement("p");
-//     cardDate.textContent= card.date;
-
- 
-// cardDiv.appendChild(cardDate);
-
-//     const cardHeading= document.createElement("h2");
-//     cardHeading.textContent= card.heading;
-
-// cardDiv.appendChild(cardHeading);
-
-// const cardEntry= document.createElement("p");
-// cardEntry.setAttribute("class", "cardEntry");
-// cardEntry.textContent= card.entry;
-//  cardDiv.appendChild(cardEntry);
-
-// cardsContainer.appendChild(cardDiv);
-
-// })
-
-// rootOne.appendChild(cardsContainer);
-
-// }
-
 
 // FOOTER
 

@@ -49,14 +49,22 @@ if (storedCards){
 
 // ## THIS SECTION CREATES THE DATE FORMAT AND displays it as the value of the input at the date Id (updated*)
 const entryDate= document.getElementById("date");
+const mobileView= window.matchMedia("(max-width: 600px)");
 
  window.addEventListener("load",updateDate);
 
 function updateDate(){
 
-    const now = new Date();
+ const now = new Date();
+const formattedDateShort = now.toLocaleDateString("en-GB",{
 
-    const formattedDate = now.toLocaleDateString("en-GB",{
+        weekday : "short",
+        day : "numeric",
+        month: "numeric",
+        year : "numeric"
+
+    });
+const formattedDateLong = now.toLocaleDateString("en-GB",{
 
         weekday : "long",
         day : "numeric",
@@ -65,11 +73,21 @@ function updateDate(){
 
     });
 
-   
-   entryDate.value= formattedDate;
+  if(!mobileView.matches){
+   entryDate.classList.remove("show");   
+   entryDate.value= formattedDateLong;
+
+  }else{
+  
+   entryDate.classList.add("show");
+ entryDate.value= formattedDateShort;
+     }
 
 
 };
+
+
+
 // this is okay. 
               
 

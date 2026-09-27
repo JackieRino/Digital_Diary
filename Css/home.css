@@ -4,7 +4,11 @@
     color: #f7da8f9f;  */
 
     /* background: radial-gradient(circle, rgb(71, 3, 3),rgb(3, 3, 71),rgb(1, 67, 1)); */
-
+body{
+  
+    border: 6px double#0e3f03  ;
+     height: 100vh; 
+}
 
 
 #cardsContainer{
@@ -82,8 +86,10 @@
 
 
 #pageIntro {
- border-top: 2px double #deb35d;
-  border-bottom: 2px double #deb35d;
+ border-top: 6px double #dbb76f;
+  border-bottom: 6px double #deb35d;
+  background-color: #f3e1bd;
+  
   
 }
 
@@ -99,7 +105,8 @@
 }
 
 #sectionLink{
-    cursor: not-allowed;
+    font-size: larger;
+    color:#40b625;
 }
 
 /* .menuButton{
@@ -114,3 +121,4 @@
 .show .menu {
     display: block;
 } */
+

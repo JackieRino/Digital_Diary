@@ -6,7 +6,7 @@ same fro the other pages
 
  const headerPhrase = "Personal Chronicles";
 
-const homeCards= cards.slice(0,5);
+const homeCards= cards.slice(0,4);
 
 
 window.addEventListener("load",page);

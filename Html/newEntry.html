@@ -23,15 +23,15 @@
             id="date" 
                 name="date"
                 value=""
-                readonly
-                
+                readonly                
                 > 
 
         <input type="text"
                 name="title" 
                 id="entryTitle"
-                placeholder="Untitled Reflection"
-                size="20px"
+                required
+                placeholder="Enter Entry Title Here"
+                size="40px"
                 >
     
         <button id="thoughtfulButton" 
@@ -53,7 +53,8 @@
     
 
         <textarea id="textarea"
-         placeholder="Begin your reflection..." 
+        required
+         placeholder="Start Typing Here..." 
          name="reflectionBody"
          cols="60"
          rows="20"
@@ -85,6 +86,7 @@
 
 </form>
 
+<br>
 
  <footer id="footer"></footer>
 

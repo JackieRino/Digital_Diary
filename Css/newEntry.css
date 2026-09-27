@@ -1,9 +1,13 @@
 
 
 body{
-border: 4px solid #7a3e48;
+border: 4px double #7a3e48;
 border-radius: 10px;
-padding: 10px;
+padding: 10px; */
+width:100vw;
+height: 100vh;
+margin:20px;
+margin-right: 20px;
 }
 
 #entryHeader{
@@ -24,6 +28,11 @@ padding: 10px;
  ;
 
 } */
+ 
+#entryTitle{
+    border:3px solid black;
+    font-weight: bold;
+}
 
 h1{
      display:flex;
@@ -89,24 +98,25 @@ a:visited{
     background-color: #f9efdd;
     border:3px solid #39732e;
     width:70vw;
+    font-weight: bold;
+
 }
 
+/* #date{
+    justify-self: center;
+   
 
+} */
 
 #reflectionTitle{
-margin-left: 20px;
 margin-bottom:10px;
 /* border-left: 2px solid black; */
-padding:20px;
-
-
-}
-
-
-#reflectionTitle {
-    /* background-color: red; */
+padding:10px;
+text-align: center;
+     background-color: red; 
     border-left: 3px solid #39732e ;
     margin-top: 5px;
+    width:80%;
 
 }
 
@@ -123,31 +133,51 @@ padding:20px;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+#footer{
+    position:relative;
+    bottom:0;
+    margin-top: 20px;
+}
+
 
 
 }
 
-#saveEntryMenu ul{
-     display:flex;
- justify-content: space-between;
+#saveEntryMenu{
+    justify-content: space-evenly;
+    /* flex-direction: column-reverse; */
+    display: flex;
+    /* border-bottom: 4px solid blue; */
+    margin-top:20px;
+
 
 }
 
-#saveEntryMenu li{
+/* #saveEntryMenu ul{
+     /* display:flex; */
+ /* justify-content: space-between; */
+
+
+
+/* #saveEntryMenu li{
     list-style-type: none;
-    margin-right: 20px;
-    padding: 10px;
-}
+    /* margin-right: 20px; */
+    /* padding: 10px; */
+
 
 #saveEntryMenu button{
-    padding: 3px;
-    border:none;
-    background-color: inherit;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #bad6b4;
+    border:2px solid black;
+    border-radius: 5px;
+    /* background-color: inherit; */
 
 }
 
 #saveEntryMenu button:active , #saveEntryMenu button:focus{
-    font-size: large;
+    background-color:red;
+    font-weight:bold;
 }
 
 
@@ -210,11 +240,15 @@ height:200px;
 #date{
     border:none;
     display: block;
-    width: 50vw;
-    max-width: 200px;
+    width: 50%;
     background-color: inherit;
      padding:5px;
     font-weight: bold;
+    justify-self: center;
+    font-size: larger;
+   
+
+
 }
 
 .clicked{
@@ -224,4 +258,9 @@ height:200px;
 
 #insertMemory, #private, #discard{
     cursor:not-allowed;
+}
+
+#footer{
+    position: absolute;
+     bottom: 0;
 }

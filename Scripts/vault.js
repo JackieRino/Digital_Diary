@@ -37,7 +37,7 @@ cardData(cards);
 
 // ###
 
-footer();
+// footer();
 
 
 }
