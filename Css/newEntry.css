@@ -139,8 +139,13 @@ text-align: center;
     margin-top: 20px;
 }
 
+#entryTitle{
+    max-width: 20px;
+}
 
-
+#date{
+    width:200px;
+}
 }
 
 #saveEntryMenu{
