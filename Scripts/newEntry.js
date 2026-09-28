@@ -179,11 +179,8 @@ tagRoot.setAttribute("class","tagRoot");
  const form= document.getElementsByName("form");
 
  function discardEntry(){
-  confirm("You Are About To Delete Your Entry. Are You Sure?");
-
-  if(confirm){
-    form.reset();
-  }
+  if(confirm("You Are About To Delete Your Entry. Are You Sure?")){
+location.reload();}
  };
 
 // console.log(entry);
@@ -273,7 +270,7 @@ const thoughtfulButton = document.getElementById("thoughtfulButton");
 // # form submission
 
 function savedEntryMessage(){
-  confirm("Entry Saved");
+  alert("Entry Saved");
   location.reload();
 }
 
