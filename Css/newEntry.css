@@ -113,7 +113,7 @@ margin-bottom:10px;
 /* border-left: 2px solid black; */
 padding:10px;
 text-align: center;
-     background-color: red; 
+     /* background-color: red;  */
     border-left: 3px solid #39732e ;
     margin-top: 5px;
     width:80%;
@@ -127,24 +127,24 @@ text-align: center;
     
     
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 605px) {
 
     #saveEntryMenu ul{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
 #footer{
-    position:absolute;
-    bottom:0;
+   
     margin-top: 20px;
 }
 
 #entryTitle{
-    max-width: 20px;
+    width:200px;
 }
 
 #date{
     width:200px;
+    font-size: small;
 }
 }
 
@@ -245,16 +245,20 @@ height:200px;
 #date{
     border:none;
     display: block;
-    width: 50%;
+   width: 50%;
     background-color: inherit;
      padding:5px;
     font-weight: bold;
-    justify-self: center;
-    font-size: larger;
+        font-size: small;
    
 
 
 }
+@media only screen and (min-width: 605px){
+    #date{
+    font-size: larger;}
+}
+
 
 .clicked{
     background-color: #e4bc6c;
@@ -263,9 +267,4 @@ height:200px;
 
 #insertMemory, #private, #discard{
     cursor:not-allowed;
-}
-
-#footer{
-    position: absolute;
-     bottom: 0;
 }

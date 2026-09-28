@@ -24,7 +24,7 @@ const headerPhrase = "Begin A Chronicle...";
 
 headerTemplate(headerPhrase);
 
-footer();
+// footer();
 
  }
 
@@ -174,15 +174,17 @@ tagRoot.setAttribute("class","tagRoot");
 
 
 // // DISCARDING ENTRY
-//  const discardButton= document.getElementById("discard");
-// discardButton.addEventListener("click",discardEntry);
+  const discardButton= document.getElementById("discard");
+ discardButton.addEventListener("click",discardEntry);
+ const form= document.getElementsByName("form");
 
-// function discardEntry(){
-//   confirm("You Are About To Delete Your Entry. Are You Sure?");
-//  true &&   (entry={id: "",
-//                date: "",
-//               heading:"",
-//                entry:""});
+ function discardEntry(){
+  confirm("You Are About To Delete Your Entry. Are You Sure?");
+
+  if(confirm){
+    form.reset();
+  }
+ };
 
 // console.log(entry);
  
@@ -270,6 +272,11 @@ const thoughtfulButton = document.getElementById("thoughtfulButton");
 
 // # form submission
 
+function savedEntryMessage(){
+  confirm("Entry Saved");
+  location.reload();
+}
+
 // const entry= 
 const entries= JSON.parse(localStorage.getItem("cardStorage")) ||[];
 
@@ -279,6 +286,7 @@ formElement.addEventListener("submit", (event)=>onSubmit((event)));
 
 function onSubmit(event){
   event.preventDefault();
+  savedEntryMessage();
   // prevents auto submission by browser when button is clicked
 
   const formInfo= new FormData(event.currentTarget);
