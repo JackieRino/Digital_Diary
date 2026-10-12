@@ -206,17 +206,19 @@ cardsContainer.id="cardsContainer";
 
 cards.forEach (card =>{
         
-
+    
     const cardDiv= document.createElement("div");
     cardDiv.setAttribute("class", "card");
+const dateButtonDiv= document.createElement("div");
 
+cardDiv.appendChild(dateButtonDiv);
     const cardDate= document.createElement("p");
     cardDate.setAttribute("class","cardDate");
     cardDate.textContent= card.date;
 
-cardDiv.appendChild(cardDate);
+dateButtonDiv.appendChild(cardDate);
 
-cardDiv.appendChild(createMenu());
+
 
     const button=document.createElement("button");
      button.setAttribute("class","menuButton");
@@ -225,10 +227,10 @@ cardDiv.appendChild(createMenu());
     button.textContent="⋮";
     // create a button, class = menuButton. when its clicked, select the div with the class menuDiv and toggle on and off the class show.
 
-  
+  cardDiv.appendChild(createMenu());
 
 
-cardDiv.appendChild(button);
+dateButtonDiv.appendChild(button);
 
 
     const cardHeading= document.createElement("h2");
