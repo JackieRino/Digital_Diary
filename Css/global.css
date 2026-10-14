@@ -55,7 +55,7 @@ color: #3e3b38;
 #pageIntro {
  margin:20px; 
  padding: 10px;
- /* width:80vw; */
+
  border-radius:20px ;
  text-align: center;
 }
@@ -80,7 +80,7 @@ color: #3e3b38;
 
 #pageHeading{
     padding: inherit;
-    font-size: ;
+    
 }
 
 #footer li {
