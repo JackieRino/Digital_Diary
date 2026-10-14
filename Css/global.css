@@ -136,9 +136,20 @@ list-style: none;
 
 
 .menuDiv{
-    border: 2px solid red;
+    
     width:100px;
     
+}
+.menuDiv ul{
+    list-style-type: none;
+    display: flex;
+    margin: 2px;
+}
+
+.menuDiv li{
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 5px;;
 }
 
   .menuDiv {
@@ -147,19 +158,14 @@ list-style: none;
 }  
 
 .menuDiv.show{
-    display:flex;
-    /* border: 2px solid red; */
-    position:absolute;
-    top:0;
-    right:0;
-    background-color:grey;
-    border-radius: 20px;
+    display:block;
     color:black;
     font-weight: bold;
+    justify-content: center;
 }  
 
 .cardDate{
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
 }
 /* 
